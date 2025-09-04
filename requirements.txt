@@ -1,0 +1,14 @@
+# Core dependencies
+pandas
+tqdm
+requests
+scipy
+
+# Information Retrieval
+python-terrier
+beir
+elasticsearch
+
+# Machine Learning / Transformers (needed for BEIR datasets)
+torch
+transformers
