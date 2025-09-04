@@ -4,6 +4,10 @@ tqdm
 requests
 scipy
 
+# Agentic AI Framework
+evoagentx
+ollama
+
 # Information Retrieval
 python-terrier
 beir
