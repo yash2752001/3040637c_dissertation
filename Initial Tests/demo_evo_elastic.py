@@ -32,7 +32,7 @@ doc_content = hits[0]["_source"]["content"]
 
 config = OpenRouterConfig(
     model="openai/gpt-4o-mini",
-    openrouter_key="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", 
+    openrouter_key="", 
     temperature=0.3,
     max_tokens=500
 )
@@ -51,3 +51,4 @@ summary_doc = {
 }
 es.index(index="ai-article-summaries", document=summary_doc)
 print("Saved summary to index 'ai-article-summaries'.")
+
