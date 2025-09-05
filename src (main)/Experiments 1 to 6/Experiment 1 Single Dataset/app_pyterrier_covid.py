@@ -17,7 +17,7 @@ DATASET_NAME = "trec-covid"
 INITIAL_RETRIEVAL_DEPTH = 15
 FINAL_RERANK_DEPTH = 10
 
-OPENROUTER_API_KEY = "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"
+OPENROUTER_API_KEY = ""
 OPENROUTER_API_URL = "https://openrouter.ai/api/v1/chat/completions"
 RERANKER_MODEL = "openai/gpt-4o-mini"
 GENERATION_MODEL = "openai/gpt-4o-mini"
@@ -138,4 +138,5 @@ def handle_query():
 
 if __name__ == '__main__':
     print("\n🌍 Starting PyTerrier COVID Flask API server...")
+
     app.run(host='0.0.0.0', port=5001) 
