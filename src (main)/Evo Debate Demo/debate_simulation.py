@@ -3,7 +3,7 @@ from elasticsearch import Elasticsearch
 from evoagentx.models import OpenRouterConfig, OpenRouterLLM
 from evoagentx.agents import Agent
 
-os.environ["OPENROUTER_API_KEY"] = "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"
+os.environ["OPENROUTER_API_KEY"] = ""
 
 es = Elasticsearch(
     ["https://localhost:9200"],
@@ -71,3 +71,4 @@ def run_debate(question, rounds=3):
 if __name__ == "__main__":
     user_question = input("Enter the debate topic/question: ")
     debate_history = run_debate(user_question)
+
