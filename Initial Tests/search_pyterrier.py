@@ -24,7 +24,7 @@ def search_and_rag(query, index_path):
     # Setup EvoAgentX LLM for RAG
     llm_config_rag = OpenRouterConfig(
         model="openai/gpt-4o-mini",
-        openrouter_key="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",
+        openrouter_key="",
         temperature=0.3,
         max_tokens=500
     )
@@ -51,3 +51,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
