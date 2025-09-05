@@ -16,7 +16,7 @@ CSV_PATH = os.path.join(SCRIPT_DIR, "data", "documents.csv")
 INITIAL_RETRIEVAL_DEPTH = 4
 FINAL_RERANK_DEPTH = 2
 
-OPENROUTER_API_KEY = "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"
+OPENROUTER_API_KEY = ""
 OPENROUTER_API_URL = "https://openrouter.ai/api/v1/chat/completions"
 RERANKER_MODEL = "openai/gpt-4o-mini"
 GENERATION_MODEL = "openai/gpt-4o-mini"
@@ -125,4 +125,5 @@ if __name__ == '__main__':
     print("\nStarting Flask API server...")
     print(f"Send POST requests to http://127.0.0.1:5000/query")
     print("Example: curl -X POST -H \"Content-Type: application/json\" -d '{\"query\": \"What is BM25?\"}' http://127.0.0.1:5000/query")
+
     app.run(host='0.0.0.0', port=5000)
