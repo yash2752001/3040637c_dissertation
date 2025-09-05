@@ -33,7 +33,7 @@ retrieved_texts = "\n\n".join(
 
 config = OpenRouterConfig(
     model="openai/gpt-4o-mini",
-    openrouter_key="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",
+    openrouter_key="",
     temperature=0.3,
     max_tokens=500
 )
@@ -62,3 +62,4 @@ answer_doc = {
 es.index(index="ai-article-answers", document=answer_doc)
 
 print("\nAnswer saved to index 'ai-article-answers'.")
+
