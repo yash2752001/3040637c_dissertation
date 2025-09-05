@@ -31,7 +31,7 @@ print(f"Found {len(hits)} documents. Now reranking...")
 # LLM configs for both RAG and reranking
 llm_config_rag = OpenRouterConfig(
     model="openai/gpt-4o-mini",
-    openrouter_key="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",
+    openrouter_key="",
     temperature=0.3,
     max_tokens=500
 )
@@ -39,7 +39,7 @@ llm_rag = OpenRouterLLM(config=llm_config_rag)
 
 llm_config_rank = OpenRouterConfig(
     model="openai/gpt-4o-mini",
-    openrouter_key="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",
+    openrouter_key="",
     temperature=0.0,  
     max_tokens=100
 )
@@ -98,3 +98,4 @@ answer_doc = {
 
 es.index(index="ai-article-answers", document=answer_doc)
 print("\nAnswer saved to 'ai-article-answers' index.")
+
